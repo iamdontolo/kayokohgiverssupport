@@ -48,6 +48,14 @@
     });
 
 
+    // Monime donation links for all donation buttons
+    var monimeDonationUrl = 'https://pay.monime.io/033874517';
+    $('.donate-btn').each(function () {
+        $(this).attr('href', monimeDonationUrl);
+        $(this).attr('target', '_blank');
+        $(this).attr('rel', 'noopener noreferrer');
+    });
+
     // Causes progress
     $('.causes-progress').waypoint(function () {
         $('.progress .progress-bar').each(function () {

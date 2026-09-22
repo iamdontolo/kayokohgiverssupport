@@ -725,8 +725,17 @@ img {
 }
 
 @media (max-width: 767.98px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .section {
         padding: 90px 0;
+    }
+
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .subscribe-form {
@@ -739,8 +748,97 @@ img {
         padding: 26px 20px;
     }
 
+    .hero-section {
+        min-height: 100vh;
+        background-position: center center;
+        padding-top: 88px;
+    }
+
+    .hero-content {
+        padding: 28px 0 24px;
+    }
+
+    .hero-section .row {
+        --bs-gutter-x: 1.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: clamp(2.2rem, 11vw, 3.2rem);
+        line-height: 1.06;
+        letter-spacing: -0.05em;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    .hero-actions a {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0 !important;
+        text-align: center;
+    }
+
     .hero-stats {
-        gap: 18px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .hero-stats div {
+        min-width: 0;
+    }
+
+    .hero-stats strong {
+        font-size: 1.35rem;
+    }
+
+    .hero-stats span {
+        font-size: 0.72rem;
+        line-height: 1.4;
+    }
+
+    .hero-card {
+        padding: 18px 18px 12px;
+        border-radius: 22px;
+    }
+
+    .mini-badge {
+        margin-bottom: 16px;
+        letter-spacing: 0.06em;
+    }
+
+    .impact-box {
+        padding: 16px 14px;
+        margin-bottom: 14px;
+    }
+
+    .impact-box strong {
+        font-size: 1.3rem;
+        line-height: 1.35;
+    }
+
+    .about-image-wrap {
+        min-height: 320px;
+    }
+
+    .about-image-wrap .main-image {
+        width: 82%;
+        height: 76%;
+    }
+
+    .about-image-wrap .floating-image {
+        width: 42%;
+        height: 34%;
+        border-width: 6px;
     }
 
     .project-body h4,
